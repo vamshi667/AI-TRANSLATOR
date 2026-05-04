@@ -1,0 +1,8 @@
+{
+  "name": "AI Translator Assistant",
+  "description": "A professional AI-powered multilingual translation platform with voice, image, and document support.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ]
+}
