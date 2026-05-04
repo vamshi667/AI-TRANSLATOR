@@ -214,7 +214,7 @@ export default function App() {
 
     setIsProcessing(true);
     try {
-      const res = await fetch('/api/translate', {
+      const res = await fetch('/.netlify/functions/translate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -243,7 +243,7 @@ export default function App() {
   const chatBot = async (messagesArray: any[]) => {
     setIsProcessing(true);
     try {
-      const res = await fetch('/api/chat', {
+      const res = await fetch('/.netlify/functions/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
